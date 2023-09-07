@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <p className="text-center">
             Developed by
-            <span className="text-sm font-medium text-slate-400 md:text-base lg:text-lg"> Charles Chukwuemeka
+            <span className="text-sm font-medium text-[#0131b6] md:text-base lg:text-lg"> Charles Chukwuemeka
             </span> &#169; 2023 All rights reserved
           </p>
         </div>
