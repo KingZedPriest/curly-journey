@@ -9,7 +9,7 @@ export default function Header() {
        <Link href="/"> <Image
           src={me}
           alt="Charles Chukwuemeka's Image"
-          className="w-10 sm:w-12 md:w-14 lg:w-16 grayscale"
+          className="w-10 sm:w-12 md:w-14 lg:w-16 grayscale hover:grayscale-0 duration-500 cursor-pointer"
         /></Link>
         <div className="hidden sm:flex gap-10">
           <Link
@@ -38,3 +38,6 @@ export default function Header() {
     </nav>
   );
 }
+
+
+
