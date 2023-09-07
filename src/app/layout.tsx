@@ -1,10 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Footer from "../component/Footer"
-import Header from "../component/Header"
+import { Noto_Sans_Display } from "next/font/google"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 
-const inter = Inter({ subsets: ['latin'] })
+const noto =  Noto_Sans_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Charles Chukwuemeka Portfolio',
@@ -18,12 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-black text-white ${inter.className}`}>
-        <Header />
-        <main className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <body className={`${noto.className} bg-[#111111] text-white`}>
+          <Header />
+        <main className='px-6 sm:px-12 md:px-18 lg:px-24'>
           {children}
         </main>
-        <Footer />
+          <Footer />
       </body>
     </html>
   )
