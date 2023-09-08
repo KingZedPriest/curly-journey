@@ -1,9 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Noto_Sans_Display } from "next/font/google"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import Mode from "../components/Mode"
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Mode from "../components/Mode";
+import ShrinkedNav from "../components/ShrinkedNav";
 
 const noto =  Noto_Sans_Display({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <Header />
         <main className='px-6 sm:px-12 md:px-18 lg:px-24'>
           <Mode />
+          <ShrinkedNav />
           {children}
         </main>
           <Footer />
