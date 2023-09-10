@@ -234,5 +234,3 @@ button {
   transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
   border-radius: 50%;
 }
-
-/* For the Shrinked Nav */

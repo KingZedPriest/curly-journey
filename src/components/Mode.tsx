@@ -40,7 +40,7 @@ export default function Mode() {
   }, [theme, element, defaultMode.matches]);
 
   return (
-    <main className="right-10 lg:right-20 top-3/4 fixed block">
+    <main className="right-10 lg:right-20 top-3/4 fixed">
       <div className="flex gap-5 rounded-xl bg-inherit p-2 shadow-md shadow-black dark:shadow-white">
         <MdLightMode
           onClick={() => setTheme("light")}
