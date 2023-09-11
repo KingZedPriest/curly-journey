@@ -6,9 +6,6 @@ import { MdLightMode } from "react-icons/md";
 export default function Mode() {
   const [theme, setTheme] = useState<string>("");
 
-  const element = document.documentElement;
-  const defaultMode = window.matchMedia("(prefers-color-scheme: dark)");
-  const [value, setValue] = useState(null);
 
 useEffect(() => {
   const storedTheme: string = localStorage.getItem("theme") ?? "dark";
@@ -16,6 +13,13 @@ useEffect(() => {
 }, []);
 
   useEffect(() => {
+    // Define them here, cause By default, Next.js only renders the page on the client side, 
+    //after the request has been made to the server. 
+    //This means that the document object is not available in the server-side code.
+
+    const element = document.documentElement;
+    const defaultMode = window.matchMedia("(prefers-color-scheme: dark)");
+
     function onWindowMatch() {
       if (localStorage.theme === "dark") {
         setTheme("dark");
@@ -42,7 +46,7 @@ useEffect(() => {
         onWindowMatch();
         break;
     }
-  }, [theme, element, defaultMode.matches]);
+  }, [theme]);
 
   return (
     <main className="fixed right-10 top-3/4 lg:right-20">
