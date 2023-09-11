@@ -4,11 +4,16 @@ import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 
 export default function Mode() {
-  const storedTheme = localStorage.getItem("theme") ?? "dark";
-  const [theme, setTheme] = useState<string>(storedTheme);
+  const [theme, setTheme] = useState<string>("");
 
   const element = document.documentElement;
   const defaultMode = window.matchMedia("(prefers-color-scheme: dark)");
+  const [value, setValue] = useState(null);
+
+useEffect(() => {
+  const storedTheme: string = localStorage.getItem("theme") ?? "dark";
+  setTheme(storedTheme);
+}, []);
 
   useEffect(() => {
     function onWindowMatch() {
