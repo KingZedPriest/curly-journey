@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="md:px-18 px-6 py-14 sm:px-12 lg:px-24">
+    <div className="py-14">
       <main className="flex flex-col md:flex-row items-center justify-between">
         <div>
           <p className="text-center">

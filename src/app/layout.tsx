@@ -20,13 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${noto.className} bg-[#F0F0F0] dark:bg-[#111111] text-black dark:text-white`}>
+      <body className={`${noto.className} bg-[#F0F0F0] dark:bg-[#111111] text-black dark:text-white px-6 sm:px-12 md:px-18 lg:px-24`}>
           <Header />
-        <main className='px-6 sm:px-12 md:px-18 lg:px-24'>
-          <Mode />
           <ShrinkedNav />
+          <Mode />
           {children}
-        </main>
           <Footer />
       </body>
     </html>
