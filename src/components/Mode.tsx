@@ -1,12 +1,12 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 
 export default function Mode() {
-  const [theme, setTheme] = useState<string>(
-    localStorage.getItem("theme") ?? "dark",
-  );
+  const storedTheme = localStorage.getItem("theme") ?? "dark";
+  const [theme, setTheme] = useState<string>(storedTheme);
+
   const element = document.documentElement;
   const defaultMode = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -40,7 +40,7 @@ export default function Mode() {
   }, [theme, element, defaultMode.matches]);
 
   return (
-    <main className="right-10 lg:right-20 top-3/4 fixed">
+    <main className="fixed right-10 top-3/4 lg:right-20">
       <div className="flex gap-5 rounded-xl bg-inherit p-2 shadow-md shadow-black dark:shadow-white">
         <MdLightMode
           onClick={() => setTheme("light")}
