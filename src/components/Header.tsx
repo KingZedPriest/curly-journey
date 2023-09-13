@@ -5,7 +5,7 @@ import me from "../../public/me-modified.png";
 export default function Header() {
   return (
     <nav className="fixed top-0 z-10 w-full">
-      <div className="flex items-center justify-between py-14">
+      <div className="flex items-center justify-between py-14 px-6 sm:px-12 md:px-18 lg:px-24">
        <Link href="/"> <Image
           src={me}
           alt="Charles Chukwuemeka's Image"
