@@ -42,22 +42,22 @@ export default function ShrinkedNav() {
         } menu fixed top-[6.2rem] z-20 flex h-40 w-[85%] flex-col justify-center rounded-md bg-inherit shadow-md shadow-black dark:shadow-white sm:hidden`}
       >
         <Link
-          className="links bg-opacity- rounded-md border-black px-4 py-2 duration-500 hover:border-r-8 hover:text-white hover:bg-[#0131b6] dark:border-white"
+          className="links bg-opacity-50 rounded-md border-black px-4 py-2 duration-500 hover:border-r-8 hover:text-white hover:bg-[#0131b6] dark:border-white"
           href="/about"
           prefetch
         >
           About
         </Link>
         <Link
-          className="links bg-opacity- rounded-md border-black px-4 py-2 duration-500 hover:border-r-8 hover:text-white hover:bg-[#0131b6] dark:border-white"
-          href="/about"
+          className="links bg-opacity-50 rounded-md border-black px-4 py-2 duration-500 hover:border-r-8 hover:text-white hover:bg-[#0131b6] dark:border-white"
+          href="/projects"
           prefetch
         >
           Projects
         </Link>
         <Link
           className="links rounded-md border-black bg-opacity-50 px-4 py-2 duration-500 hover:border-r-8 hover:text-white hover:bg-[#0131b6] dark:border-white"
-          href="/about"
+          href="/contact"
           prefetch
         >
           Contact
