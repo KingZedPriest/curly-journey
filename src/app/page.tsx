@@ -10,10 +10,10 @@ export default function Home() {
       </div>
 
       <div className="flex h-screen flex-col justify-between md:flex-row">
-        <div className="h-full w-[49%] bg-[#F0F0F0] dark:bg-[#111111]">
+        <div className="h-full w-full md:w-[49%] bg-white dark:bg-black">
           <h1>What the fuck</h1>
         </div>
-        <div className="h-full w-[49%] bg-[#F0F0F0] dark:bg-[#111111]">
+        <div className="h-full w-full md:w-[49%] bg-white dark:bg-black">
           <h1>What the fuck</h1>
         </div>
       </div>
