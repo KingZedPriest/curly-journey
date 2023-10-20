@@ -10,7 +10,7 @@ const noto =  Noto_Sans_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Charles Chukwuemeka Portfolio',
-  description: 'This is the Portfolio website of Charles Chukwuemeka. A Fullstack Website Developer.',
+  description: 'The Portfolio website of Charles Chukwuemeka. A Fullstack Website Developer, Proficient in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, JQuery, React, Next.js, Nest.js, Riot.js, TypeScript, Node.js, Express, MongoDB, Prisma and SQLite.',
 }
 
 export default function RootLayout({

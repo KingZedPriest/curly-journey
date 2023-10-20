@@ -39,7 +39,7 @@ export default function ShrinkedNav() {
       <div
         className={`${
           isOpen ? "" : "hidden"
-        } menu fixed top-[6.2rem] z-20 flex h-40 w-[85%] flex-col justify-center rounded-md bg-inherit shadow-md shadow-black dark:shadow-white sm:hidden`}
+        } menu fixed top-[6.5rem] z-20 flex h-40 ml-5 w-[85%] flex-col justify-center rounded-md bg-inherit shadow-sm shadow-black dark:shadow-white sm:hidden`}
       >
         <Link
           className="links bg-opacity-50 rounded-md border-black px-4 py-2 duration-500 hover:border-r-8 hover:text-white hover:bg-[#0131b6] dark:border-white"

@@ -50,7 +50,7 @@ useEffect(() => {
 
   return (
     <main className="fixed right-12 top-3/4 lg:right-24">
-      <div className="flex gap-5 rounded-xl bg-inherit p-2 shadow-md shadow-black dark:shadow-white">
+      <div className="flex gap-5 rounded-xl bg-inherit p-2 shadow-sm shadow-black dark:shadow-white">
         <MdLightMode
           onClick={() => setTheme("light")}
           className={`${
